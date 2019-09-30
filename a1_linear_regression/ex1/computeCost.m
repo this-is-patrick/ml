@@ -13,9 +13,11 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-
-
-
+J = 1/(2*m) * sum(((X*theta)-y).^2);
+%err = h - y;
+%err_squared = err .^ 2
+%q = sum(err_squared)
+%J = 1/(2*m)*q
 
 % =========================================================================
 

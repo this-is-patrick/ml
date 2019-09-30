@@ -18,7 +18,14 @@ for iter = 1:num_iters
     %
 
 
-
+%h = X * theta
+%err_vector = h - y
+%length(X)
+%length(err_vector)
+%new_X = X'
+%delta = new_X * err_vector
+theta_change = alpha*(1/m)*(X' * ((X*theta) - y));
+theta = theta - theta_change;
 
 
 
